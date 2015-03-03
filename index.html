@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Twee.IO Framework by tweeio</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Twee.IO Framework</h1>
+        <h2>Node.js &amp; io.js modular framework with extensions, middleware and modules support</h2>
+        <a href="https://github.com/tweeio/docs" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h2>
+<a id="start-your-first-project-using-tweeio" class="anchor" href="#start-your-first-project-using-tweeio" aria-hidden="true"><span class="octicon octicon-link"></span></a>Start your first project using Twee.IO!</h2>
+
+<pre><code>sudo npm install -g twee    # Twee.IO installation
+twee &amp;&amp; cd application      # new application generation
+npm install                 # dependencies installation
+npm run-script assets       # running bower and compiling styles and scripts
+npm start                   # starting on http://127.0.0.1:3000/
+</code></pre>
+
+<h3>
+<a id="quick-facts-about-tweeio" class="anchor" href="#quick-facts-about-tweeio" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quick Facts About Twee.IO</h3>
+
+<ul>
+<li>Modular structure with folders namespaces</li>
+<li>Extensions support with ultra flexible dependencies flow</li>
+<li>Config driven with environments support</li>
+<li>Extra scalable with stable Express.js Kernel under the hood</li>
+<li>Socket.IO Support</li>
+<li>Maximum automatisation</li>
+</ul>
+
+<h3>
+<a id="modular-structure" class="anchor" href="#modular-structure" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modular Structure</h3>
+
+<p>Twee.IO gives you new powerful modules concept. It's new modules system that has been developed with intention to be simple, flexible and with ability for code re-usage. Module contains completely everything needed: code, including MVC; libraries code; views; images; javascript; CSS; extensions; params; models. In other words module - is namespaced folder. Also you can define module as functionality that is grouped and available for reusing in complex big applications.</p>
+
+<p><img src="http://twee.io/assets/img/screens/Modules.png" alt="Modules Structure"></p>
+
+<h3>
+<a id="middleware-compatible" class="anchor" href="#middleware-compatible" aria-hidden="true"><span class="octicon octicon-link"></span></a>Middleware Compatible</h3>
+
+<p>Any middleware which was ever written for Express.js or Connect - is also fully compatible with Twee.IO. You can even specify deepness of complex objects to use sub-object as middleware function in your application or module. Middleware using in Twee.IO is as simple as using it in Express.js. But also you can specify order of middleware and this process is ultra-flexible. This all you can do just changing configuration files. There are few middleware types in Twee.IO: module-level, extension-level, controller-level (pre-action and post-action). This all has been implemented for you to be sure that all the middleware functions works in needed time and needed place, - i.e. to make your application maximum predictable.</p>
+
+<p><img src="http://twee.io/assets/img/screens/MiddlewareFunctions.png" alt="Middleware Functions"></p>
+
+<h3>
+<a id="modern-framework" class="anchor" href="#modern-framework" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modern Framework</h3>
+
+<p>Modern means that you can use all the necessary benefits of today's frameworks: routing, compression, MVC pattern, excellent configuration possibilities, transparent structure of the kernel, kernel events to extend framework, XSS protection, object-oriented code, best practices and patterns during building application structure, using Grunt, automation, sockets support, databases, ACL, excellent documentation with big amount of examples. 
+Also you can use any existing NPM module to be scalable and flexible.</p>
+
+<h3>
+<a id="extensions-support" class="anchor" href="#extensions-support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extensions Support</h3>
+
+<p>Extensions are special code blocks, standalone NPM modules which can have it's own configuration and can depend of another extensions, and with interacting with Twee.IO API can inject additional functionality in framework's core, use functionality of another extensions and application modules and change application environment totally. Now you don't need to keep in mind the order of including functionality in code</p>
+
+<p><img src="http://twee.io/assets/img/screens/extensions.png" alt="Extensions Support"></p>
+
+<h3>
+<a id="template-engine-freedom" class="anchor" href="#template-engine-freedom" aria-hidden="true"><span class="octicon octicon-link"></span></a>Template Engine Freedom</h3>
+
+<p>Views Engine - is the most common and powerful tool in modern web-development. Like a Swiss knife. We don't need to force you to use any specific view engine. Just turn ON one of many existing view engines and start developing!
+Here's full list of view engines which are supported by consolidate package: atpl, doT.js, dust, eco, ect, ejs, haml, haml-coffee, handlebars, hogan, jade, jazz, jqtpl, JUST, liquor, lodash, mote, mustache, nunjucks, QEJS, ractive, swig, templayed, toffee, underscore, walrus, whiskers</p>
+
+<h3>
+<a id="work-everywhere" class="anchor" href="#work-everywhere" aria-hidden="true"><span class="octicon octicon-link"></span></a>Work Everywhere</h3>
+
+<p>You can run Twee.IO application on any server with any operation system which supports Express.js applications running. Framework is very fast and don't require too much resources. And this with it's flexibility and thought architecture makes it excellent choice for every engineer. It is simple to run Twee.IO. Install it, compile scripts and styles and run. For detailed information read documentation. Twee.IO uses Grunt for working with assets, it's compiling and concatenation. Also it supports SSL-certificates, not only for HTTPS, but also for secured sockets. There is possibility to make so many forks of process as needed, but not more than CPUs number.</p>
+
+<p><img src="http://twee.io/assets/img/screens/RunEverywhere.png" alt="Work Everywhere"></p>
+
+<blockquote>
+<p>"Good design adds value faster than it adds cost."
+Thomas C. Gale</p>
+</blockquote>
+
+<h3>
+<a id="what-is-tweeio" class="anchor" href="#what-is-tweeio" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is Twee.IO?</h3>
+
+<p>Twee.IO has been developed with love to Express.js. It's mission is to help professionals to write big scalable and stable applications in real production environment having at the same time great opportunities for support. It is actually a scalable and extensible layer with stable core which uses best and greater-tested npm modules for reaching the business goals. The fact that Twee.IO based on Express.js.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/tweeio/docs/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/tweeio/docs/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/tweeio/docs"></a> is maintained by <a href="https://github.com/tweeio">tweeio</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
